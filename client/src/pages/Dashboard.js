@@ -178,7 +178,7 @@ const Dashboard = () => {
             </div>
             <h3 className="text-lg font-medium text-navy-700 mb-2">You haven't added any properties yet</h3>
             <p className="text-navy-600 mb-6 max-w-md mx-auto">To use the deposit protection system, you need to add your rented property first.</p>
-            <Link to="/properties/new" className="btn-primary">
+            <Link to="/properties/new" className="btn-primary inline-flex items-center justify-center px-6 py-2 bg-primary text-navy-800 font-medium rounded-md hover:bg-amber-400 transition-colors">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
               </svg>
@@ -252,14 +252,14 @@ const Dashboard = () => {
             <h3 className="text-lg font-medium text-navy-700 mb-2">You haven't created any reports yet</h3>
             <p className="text-navy-600 mb-6 max-w-md mx-auto">Create a report to document the condition of your property and share it with your landlord.</p>
             {properties.length > 0 ? (
-              <Link to={`/properties/${properties[0].id}/reports/new`} className="btn-primary">
+              <Link to={`/properties/${properties[0].id}/reports/new`} className="btn-primary inline-flex items-center justify-center px-6 py-2 bg-primary text-navy-800 font-medium rounded-md hover:bg-amber-400 transition-colors">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 13h6m-3-3v6m5 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
                 Create First Report
               </Link>
             ) : (
-              <Link to="/properties/new" className="btn-primary">
+              <Link to="/properties/new" className="btn-primary inline-flex items-center justify-center px-6 py-2 bg-primary text-navy-800 font-medium rounded-md hover:bg-amber-400 transition-colors">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
                 </svg>
